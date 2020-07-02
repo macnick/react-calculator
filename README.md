@@ -35,10 +35,9 @@ Math-magicians is a fictional company based in France. They have requested my he
 
 ### Live version
 
-There is no live version yet. The link will be updated as soon as the calculator is functional
+A live version is hosted on Heroku.
 
-- [**Calulator**](https://*) @ heroku
-- [**Calulator**](https://*) @ nickharas.com
+- [**Calulator**](https://react-calculator-88569.herokuapp.com) @ heroku
 
 ### How to Install and Run in Your Computer
 
@@ -49,18 +48,17 @@ Use your terminal and run the commands after each instruction.
 | Command                                             | Description                                           |
 | --------------------------------------------------- | ----------------------------------------------------- |
 | `git clone https://github.com/macnick/RPG-game.git` | Clone the repository to you computer                  |
-| `cd RPG-game`                                       | Navigate to the newly created folder                  |
+| `cd react-calculator`                               | Navigate to the newly created folder                  |
 | `npm install`                                       | Install dependencies and launch browser with examples |
 | `npm start`                                         | Makes the build and starts the development server     |
 |                                                     | Press `Ctrl + c` to kill **http-server** process      |
-| `http://localhost:8000`                             | Visit this link to play the game                      |
+| `http://localhost:3000`                             | Visit this link to use the calculator                 |
 
 [Up](#Table-of-Contents)
 
 ## Acknowledgements
 
-- Dark Forest Background image By Zeyu Ren 任泽宇
-- Button and enemy images by pennomi, Buch, cemkalyoncu at [opengameart.org](https://opengameart.org/)
+- Microverse [opengameart.org](https://opengameart.org/)
 - Title image created using [textcraft.net](https://textcraft.net)
 - Player images by [craftpix.net](https://craftpix.net/)
 
