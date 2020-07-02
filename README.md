@@ -1,68 +1,94 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-calculator
 
-## Available Scripts
+Fully-functional, beautiful calculator built with React
 
-In the project directory, you can run:
+## Table of Contents
 
-### `yarn start`
+- [Objective](#Objective)
+- [Technologies Used](#Technologies-Used)
+- [Live Version](#Live-version)
+- [Install and Run](#How-to-Install-and-Run-in-Your-Computer)
+- [Acknowledgments](#Acknowledgments)
+- [Author](#Author)
+- [Contributing](#Contributing)
+- [Show your support](#Show-your-support)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Objective
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The objective of this project is to build a simple turn-based RPG game with a scoring system, using JavaScript ES6, Phaser 3 framework, and other modern technologies. See [technologies used](#Technologies-Used) for more info. I had to design the story, the gameplay, the scenes, and the scoring system.
 
-### `yarn test`
+[Up](#Table-of-Contents)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technologies Used
 
-### `yarn build`
+- Node, npm
+- Phaser 3
+- JavaScript
+- Webpack
+- Babel
+- Jest
+- ESlint
+- HTML/CSS
+- Netlify
+- Microverse Leaderboard API
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Up](#Table-of-Contents)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Live version
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The game is hosted on two different servers, macexperts.gr and netlify.com. Both use the same API to store the scores so it does not matter in which one you play. You can play the game here:
 
-### `yarn eject`
+- [**Dark Forest**](https://darkforest.netlify.app) @ netlify
+- [**Dark Forest**](https://macexperts.gr/darkforest) @ macexperts
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### How to Install and Run in Your Computer
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run the scripts **npm** is required. To get npm you have to install [Node.js](https://nodejs.org). Follow the installation instructions for your system Mac, Linux or Windows.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Use your terminal and run the commands after each instruction.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| Command                                             | Description                                           |
+| --------------------------------------------------- | ----------------------------------------------------- |
+| `git clone https://github.com/macnick/RPG-game.git` | Clone the repository to you computer                  |
+| `cd RPG-game`                                       | Navigate to the newly created folder                  |
+| `npm install`                                       | Install dependencies and launch browser with examples |
+| `npm start`                                         | Makes the build and starts the development server     |
+|                                                     | Press `Ctrl + c` to kill **http-server** process      |
+| `http://localhost:8000`                             | Visit this link to play the game                      |
 
-## Learn More
+[Up](#Table-of-Contents)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Acknowledgements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Dark Forest Background image By Zeyu Ren 任泽宇
+- Button and enemy images by pennomi, Buch, cemkalyoncu at [opengameart.org](https://opengameart.org/)
+- Title image created using [textcraft.net](https://textcraft.net)
+- Player images by [craftpix.net](https://craftpix.net/)
 
-### Code Splitting
+[Up](#Table-of-Contents)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## 👤 Author
 
-### Analyzing the Bundle Size
+- Github: [@macnick](https://github.com/macnick)
+- Twitter: [@mac_experts](https://twitter.com/mac_experts)
+- Linkedin: [Nick Haralampopoulos](https://www.linkedin.com/in/nick-haralampopoulos/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## 🤝 Contributing
 
-### Making a Progressive Web App
+Contributions, issues and feature requests are welcome!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Feel free to check the [issues page](https://github.com/macnick/RPG-game/issues).
 
-### Advanced Configuration
+1. Fork it (https://github.com/macnick/RPG-game/fork)
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create a new Pull Request
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Show your support
 
-### Deployment
+Give a ⭐️ if you enjoyed this project!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## 📝 License
 
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is [MIT](lic.url) licensed.
