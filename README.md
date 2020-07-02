@@ -15,31 +15,30 @@ Fully-functional, beautiful calculator built with React
 
 ### Objective
 
-The objective of this project is to build a simple turn-based RPG game with a scoring system, using JavaScript ES6, Phaser 3 framework, and other modern technologies. See [technologies used](#Technologies-Used) for more info. I had to design the story, the gameplay, the scenes, and the scoring system.
+Math-magicians is a fictional company based in France. They have requested my help to build a simple, but fully-functional, beautiful, and user-friendly program that would assist them with their calculations. I used React and other technologies. See [technologies used](#Technologies-Used) for more info.
 
 [Up](#Table-of-Contents)
 
 ### Technologies Used
 
-- Node, npm
-- Phaser 3
-- JavaScript
-- Webpack
-- Babel
-- Jest
-- ESlint
+- Node.js
+- React
+- React-DOM
+- React-Create-App
+- npm
 - HTML/CSS
-- Netlify
-- Microverse Leaderboard API
+- ES6
+- ESlint
+- Heroku
 
 [Up](#Table-of-Contents)
 
 ### Live version
 
-The game is hosted on two different servers, macexperts.gr and netlify.com. Both use the same API to store the scores so it does not matter in which one you play. You can play the game here:
+There is no live version yet. The link will be updated as soon as the calculator is functional
 
-- [**Dark Forest**](https://darkforest.netlify.app) @ netlify
-- [**Dark Forest**](https://macexperts.gr/darkforest) @ macexperts
+- [**Calulator**](https://*) @ heroku
+- [**Calulator**](https://*) @ nickharas.com
 
 ### How to Install and Run in Your Computer
 
