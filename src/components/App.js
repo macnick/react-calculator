@@ -2,11 +2,13 @@ import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 
-class App extends React.Component {
-  render() {
+function App() {
+  return (
     <div>
       <Display />
       <ButtonPanel />
-    </div>;
-  }
+    </div>
+  );
 }
+
+export default App;
