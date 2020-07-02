@@ -58,9 +58,9 @@ Use your terminal and run the commands after each instruction.
 
 ## Acknowledgements
 
-- Microverse [opengameart.org](https://opengameart.org/)
-- Title image created using [textcraft.net](https://textcraft.net)
-- Player images by [craftpix.net](https://craftpix.net/)
+- [Microverse](https://www.microverse.org) software development school
+- SHEY Louis Chia for the 1st code review
+-
 
 [Up](#Table-of-Contents)
 
@@ -69,14 +69,15 @@ Use your terminal and run the commands after each instruction.
 - Github: [@macnick](https://github.com/macnick)
 - Twitter: [@mac_experts](https://twitter.com/mac_experts)
 - Linkedin: [Nick Haralampopoulos](https://www.linkedin.com/in/nick-haralampopoulos/)
+- AngelList: [Nick Haralampopoulos](https://angel.co/u/nick-haralampopoulos)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/macnick/RPG-game/issues).
+Feel free to check the [issues page](https://github.com/macnick/react-calculator/issues).
 
-1. Fork it (https://github.com/macnick/RPG-game/fork)
+1. Fork it (https://github.com/macnick/react-calculator/fork)
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
