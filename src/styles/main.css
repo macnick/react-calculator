@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 700px;
 }
+
 .display {
   background-color: #444;
   height: 100px;
@@ -16,15 +17,18 @@
   border-radius: 6px 6px 0 0;
   overflow-x: hidden;
 }
+
 .buttonpanel {
   display: flex;
   flex-direction: column;
   border-radius: 0 0 6px 6px;
 }
+
 .btn-group {
   display: flex;
   height: 100px;
 }
+
 .button {
   width: 25%;
   line-height: 100px;
@@ -32,6 +36,7 @@
   font-size: 40px;
   text-align: center;
 }
+
 .group1,
 .group2,
 .group3,

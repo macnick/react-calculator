@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ name, color, wide }) => {
-  return (
-    <div
-      className="button"
-      style={{ backgroundColor: color, width: wide ? '50%' : '25%' }}
-    >
-      {name}
-    </div>
-  );
-};
+const Button = ({ name, color, wide }) => (
+  <div
+    className="button"
+    style={{ backgroundColor: color, width: wide ? '50%' : '25%' }}
+  >
+    {name}
+  </div>
+);
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
