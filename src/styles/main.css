@@ -2,31 +2,40 @@
   display: flex;
   flex-direction: column;
   width: 700px;
-  margin: auto;
 }
 .display {
-  background-color: #555;
+  background-color: #444;
   height: 100px;
   line-height: 100px;
   color: #fff;
-  font-size: 60px;
-  font-weight: bold;
+  font-size: 68px;
+  font-weight: 500;
   text-align: right;
   padding: 0 10px;
+  border: 2px solid #777;
+  border-radius: 6px 6px 0 0;
   overflow-x: hidden;
 }
 .buttonpanel {
   display: flex;
   flex-direction: column;
+  border-radius: 0 0 6px 6px;
+}
+.btn-group {
+  display: flex;
   height: 100px;
 }
 .button {
-  background-color: chocolate;
+  width: 25%;
+  line-height: 100px;
+  border: 1px solid #777;
+  font-size: 40px;
+  text-align: center;
 }
 .group1,
 .group2,
 .group3,
 .group4,
 .group5 {
-  background-color: cornflowerblue;
+  background-color: #f94;
 }

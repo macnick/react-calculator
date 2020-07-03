@@ -3,13 +3,13 @@ import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import '../styles/main.css';
 
-function App() {
+const App = () => {
   return (
     <div className="app">
       <Display />
       <ButtonPanel />
     </div>
   );
-}
+};
 
 export default App;

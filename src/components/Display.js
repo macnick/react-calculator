@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Display({ result }) {
+const Display = ({ result }) => {
   return <div className="display">{result}</div>;
-}
+};
 
 Display.propTypes = {
   result: PropTypes.string,
