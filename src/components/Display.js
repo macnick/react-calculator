@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Display(props) {
-  return <h1>{props.result}</h1>;
+function Display({ result }) {
+  return <h1>{result}</h1>;
 }
 
 Display.propTypes = {
