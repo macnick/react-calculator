@@ -1,0 +1,32 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: auto;
+}
+.display {
+  background-color: #555;
+  height: 100px;
+  line-height: 100px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: right;
+  padding: 0 10px;
+  overflow-x: hidden;
+}
+.buttonpanel {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+.button {
+  background-color: chocolate;
+}
+.group1,
+.group2,
+.group3,
+.group4,
+.group5 {
+  background-color: cornflowerblue;
+}

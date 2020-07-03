@@ -1,10 +1,11 @@
 import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
+import '../styles/main.css';
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Display />
       <ButtonPanel />
     </div>
