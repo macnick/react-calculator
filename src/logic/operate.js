@@ -1,10 +1,10 @@
 import Big from 'big.mjs';
 
 const operate = (number1, number2, operation) => {
-  let num1 = Big(number1);
-  let num2 = Big(number2);
+  const num1 = Big(number1);
+  const num2 = Big(number2);
   let total = 0;
-  let operations = {
+  const operations = {
     '+': () => num1.plus(num2),
     '-': () => num1.minus(num2),
     x: () => num1.times(num2),
