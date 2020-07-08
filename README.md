@@ -60,6 +60,7 @@ Use your terminal and run the commands after each instruction.
 
 - [Microverse](https://www.microverse.org) software development school
 - [SHEY Louis Chia](https://github.com/shloch) for reviewing Milestones 1, 2, and 3
+- [Addo Forison](https://github.com/Forison) for reviewing Milestone 4
 
 [Up](#Table-of-Contents)
 
