@@ -59,7 +59,7 @@ Use your terminal and run the commands after each instruction.
 ## Acknowledgements
 
 - [Microverse](https://www.microverse.org) software development school
-- [SHEY Louis Chia](https://github.com/shloch) 1st code review
+- [SHEY Louis Chia](https://github.com/shloch) for reviewing Milestones 1, 2, and 3
 
 [Up](#Table-of-Contents)
 
