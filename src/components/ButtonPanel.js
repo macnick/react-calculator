@@ -4,7 +4,7 @@ import Button from './Button';
 
 const ButtonPanel = ({ clickHandler }) => {
   const grey = '#ccc';
-  const orange = '#f94';
+  const orange = '#f80';
   const groups = [
     ['AC', '+/-', '%', '÷'],
     ['7', '8', '9', '×'],
