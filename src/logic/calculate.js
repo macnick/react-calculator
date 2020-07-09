@@ -2,6 +2,7 @@ import operate from './operate';
 
 const calculate = (data, btnName) => {
   let { total, next, operation } = data;
+
   const operations = {
     AC: () => {
       total = null;
@@ -15,7 +16,7 @@ const calculate = (data, btnName) => {
     '÷': () => operate(total, next, operation),
     '%': () => operate(total, next, operation),
     '-': () => operate(total, next, operation),
-    '*': () => operate(total, next, operation),
+    'x': () => operate(total, next, operation),
     '=': () => {
       if (total && next) {
         operate(total, next, operation);
@@ -24,7 +25,11 @@ const calculate = (data, btnName) => {
       }
     },
   };
-  total = operations[btnName]();
+
+  if (operations[btnName] == undefined) {
+    total = total == null || total == 0 ? btnName : total += btnName
+  }
+
   return { total, next, operation };
 };
 

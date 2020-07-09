@@ -4,6 +4,7 @@ import Button from './Button';
 
 const ButtonPanel = ({ clickHandler }) => {
   const grey = '#ccc';
+  const orange = '#f94';
   const groups = [
     ['AC', '+/-', '%', '÷'],
     ['7', '8', '9', '×'],
@@ -22,9 +23,9 @@ const ButtonPanel = ({ clickHandler }) => {
             <Button
               key={el}
               name={el}
-              color={i < group.length - 1 ? grey : null}
+              color={i < group.length - 1 ? grey : orange}
               wide={el === '0'}
-              clickHandler={handleClick}
+              clickHandler={() => handleClick(el)}
             />
           ))}
         </div>

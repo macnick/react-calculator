@@ -17,14 +17,16 @@ class App extends React.Component {
   }
 
   handleClick = (btnName) => {
-    alert('you clicked')
     let { total, next, operation } = this.state;
-    this.setState(calculate({ total, next, operation }, btnName))
+    let calc = calculate({ total, next, operation }, btnName)
+    this.setState({ total: calc.total, next: calc.next, operation: calc.operation });
   }
 
   render() {
     const result = this.state.next || this.state.total;
+
     return (< div className="app" >
+      <pre>{JSON.stringify(this.state, null, 2)}</pre>
       <Display result={result} />
       <ButtonPanel clickHandler={this.handleClick} />
     </div >

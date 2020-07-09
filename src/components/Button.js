@@ -1,14 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ name, color, wide }) => (
-  <div
-    className="button"
-    style={{ backgroundColor: color, width: wide ? '50%' : '25%' }}
-  >
-    {name}
-  </div>
-);
+const Button = ({ name, color, wide, clickHandler }) => {
+
+  const handleClick = btnName => clickHandler(name);
+
+  return (
+    <div
+      className="button"
+      style={{ backgroundColor: color, width: wide ? '50.2%' : '25%' }}
+      onClick={() => handleClick(name)}
+    >
+      {name}
+    </div>
+  )
+};
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
