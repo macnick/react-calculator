@@ -28,7 +28,6 @@ class App extends React.Component {
 
     return (
       <div className="app">
-        <pre>{JSON.stringify(this.state, null, 3)}</pre>
         <Display result={result} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>
