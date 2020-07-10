@@ -5,7 +5,7 @@
 }
 
 .display {
-  background-color: #444;
+  background-color: #333;
   height: 100px;
   line-height: 100px;
   color: #fff;
@@ -37,10 +37,7 @@
   text-align: center;
 }
 
-.group1,
-.group2,
-.group3,
-.group4,
-.group5 {
-  background-color: #f94;
+.button:hover {
+  filter: brightness(85%);
+  cursor: pointer;
 }
