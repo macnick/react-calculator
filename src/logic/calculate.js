@@ -7,7 +7,6 @@ const calculate = (data, btnName) => {
     if (next === null) {
       operation = btnName;
     } else {
-      // alert(o)
       total = operate(t, n, o);
       next = null;
     }
