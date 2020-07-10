@@ -12,7 +12,7 @@ const Button = ({
       type="button"
       style={{
         backgroundColor: color,
-        width: wide ? '50.2%' : '25%',
+        width: wide ? '50%' : '25%',
       }}
       onClick={() => handleClick(name)}
     >
