@@ -7,7 +7,6 @@ const calculate = (data, btnName) => {
     if (next === null) {
       operation = btnName;
     } else {
-      // alert(o)
       total = operate(t, n, o);
       next = null;
     }
@@ -53,9 +52,11 @@ const calculate = (data, btnName) => {
       total = btnName;
       operation = null;
     } else if (operation === null) {
-      total = total === null || total === 0 ? btnName : total += btnName;
+      // eslint-disable-next-line
+      total = total === null || total == 0 ? btnName : total += btnName;
     } else {
-      next = next === null || next === 0 ? btnName : next += btnName;
+      // eslint-disable-next-line
+      next = next === null || next == 0 ? btnName : next += btnName;
     }
   } else {
     operations[btnName]();

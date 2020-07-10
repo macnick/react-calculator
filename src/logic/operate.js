@@ -12,7 +12,7 @@ const operate = (number1, number2, operation) => {
     '÷': () => (num2 == 0 ? 'NaN' : num1.div(num2)),
     '%': () => (!num2 ? num1.times(0.01) : num1.times(num2).times(0.01)),
   };
-  // do I need to convert the results to strings inside the object?
+
   total = operations[operation]();
 
   return total.toString();
