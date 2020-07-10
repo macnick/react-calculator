@@ -2,6 +2,10 @@
 
 Fully-functional, beautiful calculator built with React
 
+<p align="center">
+<img src="public/screenshot.png">
+</p>
+
 ## Table of Contents
 
 - [Objective](#Objective)
@@ -59,7 +63,9 @@ Use your terminal and run the commands after each instruction.
 ## Acknowledgements
 
 - [Microverse](https://www.microverse.org) software development school
-- [SHEY Louis Chia](https://github.com/shloch) 1st code review
+- [SHEY Louis Chia](https://github.com/shloch) for reviewing Milestones 1, 2, and 3
+- [Addo Forison](https://github.com/Forison) for reviewing Milestone 4
+- [Sérgio Torres](https://github.com/Torres-ssf) for reviewing Milestone 5
 
 [Up](#Table-of-Contents)
 
