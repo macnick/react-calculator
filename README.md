@@ -5,6 +5,7 @@ Fully-functional, beautiful calculator built with React
 <p align="center">
 <img src="public/screenshot.png">
 </p>
+
 ## Table of Contents
 
 - [Objective](#Objective)
