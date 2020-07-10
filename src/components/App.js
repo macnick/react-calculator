@@ -12,26 +12,27 @@ class App extends React.Component {
       total: null,
       next: null,
       operation: null,
-    }
+    };
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick = (btnName) => {
-    let { total, next, operation } = this.state;
-    let calc = calculate({ total, next, operation }, btnName)
+  handleClick(btnName) {
+    const { total, next, operation } = this.state;
+    const calc = calculate({ total, next, operation }, btnName);
     this.setState({ total: calc.total, next: calc.next, operation: calc.operation });
   }
 
   render() {
-    const result = this.state.next || this.state.total;
+    const { next, total } = this.state;
+    const result = next || total;
 
-    return (< div className="app" >
-      <pre>{JSON.stringify(this.state, null, 2)}</pre>
-      <Display result={result} />
-      <ButtonPanel clickHandler={this.handleClick} />
-    </div >
+    return (
+      <div className="app">
+        <pre>{JSON.stringify(this.state, null, 2)}</pre>
+        <Display result={result} />
+        <ButtonPanel clickHandler={this.handleClick} />
+      </div>
     );
-
   }
 }
 

@@ -11,24 +11,24 @@ const calculate = (data, btnName) => {
       total = operate(t, n, o);
       next = null;
     }
-  }
+  };
 
   const operations = {
-    'AC': () => {
+    AC: () => {
       total = null;
       next = null;
       operation = null;
     },
     '+/-': () => {
       if (next !== null) {
-        next = next.startsWith('-') ? next.slice(1) : '-' + next;
+        next = next.startsWith('-') ? next.slice(1) : `-${next}`;
       } else if (total !== null) {
-        total = total.startsWith('-') ? total.slice(1) : '-' + total;
+        total = total.startsWith('-') ? total.slice(1) : `-${total}`;
       }
     },
     '%': () => doOp(total, next, operation),
     '÷': () => doOp(total, next, operation),
-    'x': () => doOp(total, next, operation),
+    x: () => doOp(total, next, operation),
     '+': () => doOp(total, next, operation),
     '-': () => doOp(total, next, operation),
     '=': () => {
@@ -43,9 +43,9 @@ const calculate = (data, btnName) => {
       if (operation == null && !total.includes('.')) {
         total += '.';
       } else if (operation && !next.includes('.')) {
-        next += '.'
+        next += '.';
       }
-    }
+    },
   };
 
   if (operations[btnName] === undefined) {
@@ -53,12 +53,12 @@ const calculate = (data, btnName) => {
       total = btnName;
       operation = null;
     } else if (operation === null) {
-      total = total === null || total === 0 ? btnName : total += btnName
+      total = total === null || total === 0 ? btnName : total += btnName;
     } else {
-      next = next === null || next === 0 ? btnName : next += btnName
+      next = next === null || next === 0 ? btnName : next += btnName;
     }
   } else {
-    operations[btnName]()
+    operations[btnName]();
   }
 
   return { total, next, operation };

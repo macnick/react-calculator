@@ -13,7 +13,7 @@ const ButtonPanel = ({ clickHandler }) => {
     ['0', '.', '='],
   ];
 
-  const handleClick = btnName => clickHandler(btnName)
+  const handleClick = btnName => clickHandler(btnName);
 
   return (
     <div className="buttonpanel">
