@@ -1,42 +1,61 @@
 {
+  "root": true,
   "env": {
     "browser": true,
-    "es6": true,
-    "jest": true
+    "es2021": true
   },
+  "extends": [
+    "../../.eslintrc.js",
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended",
+    "plugin:sonarjs/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": 2018,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "extends": [
-    "airbnb",
-    "plugin:react/recommended"
-  ],
-  "plugins": [
-    "react"
-  ],
+  "plugins": ["react", "@typescript-eslint"],
   "rules": {
+    "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [
-      "warn",
+      1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".ts", ".tsx", ".js", ".jsx"]
       }
     ],
-    "import/no-unresolved": "off",
-    "no-shadow": "off",
-    "arrow-parens": [
+    "import/no-named-as-default": "warn",
+    "etc/no-commented-out-code": "warn",
+    "no-inline-styles/no-inline-styles": "warn",
+    "import/no-cycle": "warn",
+    "import/no-useless-path-segments": "warn",
+    "import/no-unresolved": "warn",
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "react/require-default-props": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
       "error",
-      "as-needed"
-    ]
-  },
-  "ignorePatterns": [
-    "dist/",
-    "build/"
-  ]
+      { "argsIgnorePattern": "^_" }
+    ],
+    "import/no-extraneous-dependencies": "off",
+    "react/function-component-definition": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "eqeqeq": "off",
+    "no-empty-pattern": "off",
+    "no-array-constructor": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"]
+  }
 }

@@ -1,9 +1,8 @@
 import React from 'react';
-import Display from './Display';
-import ButtonPanel from './ButtonPanel';
+import { ButtonPanel, Display } from './components';
 /* eslint-disable no-unused-vars */
-import calculate from '../logic/calculate';
-import '../styles/main.css';
+import calculate from './logic/calculate';
+import './styles/main.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -19,7 +18,11 @@ class App extends React.Component {
   handleClick(btnName) {
     const { total, next, operation } = this.state;
     const calc = calculate({ total, next, operation }, btnName);
-    this.setState({ total: calc.total, next: calc.next, operation: calc.operation });
+    this.setState({
+      total: calc.total,
+      next: calc.next,
+      operation: calc.operation,
+    });
   }
 
   render() {
@@ -27,7 +30,7 @@ class App extends React.Component {
     const result = next || total;
 
     return (
-      <div className="app">
+      <div className='app'>
         <Display result={result} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>

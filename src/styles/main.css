@@ -14,14 +14,14 @@
   text-align: right;
   padding: 0 10px;
   border: 2px solid #777;
-  border-radius: 6px 6px 0 0;
+  border-radius: 12px 12px 0 0;
   overflow-x: hidden;
 }
 
 .buttonpanel {
   display: flex;
   flex-direction: column;
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 12px 12px;
 }
 
 .btn-group {
