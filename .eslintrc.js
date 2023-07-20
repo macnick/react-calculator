@@ -38,13 +38,10 @@ module.exports = {
     // 'jsx-control-statements',
   ],
   settings: {
-    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
-    },
+    'import/extensions': ['.js', '.jsx'],
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        extensions: ['.js', '.jsx'],
       },
     },
     react: {
@@ -59,8 +56,6 @@ module.exports = {
         '': 'never',
         js: 'never',
         jsx: 'never',
-        ts: 'never',
-        tsx: 'never',
       },
     ],
     'prettier/prettier': 0,
@@ -72,7 +67,6 @@ module.exports = {
     'react/jsx-indent-props': 0,
     'import/no-unresolved': 0,
     'react/jsx-indent': 0,
-    // 'react/jsx-no-undef': [2, { allowGlobals: true }],
     'react/jsx-fragments': 0,
     'react/jsx-filename-extension': offIfDevElseError,
     'react/jsx-wrap-multilines': 0,
@@ -120,7 +114,7 @@ module.exports = {
       },
     ],
     // 'no-comments/disallowComments': offIfDevElseError,
-    'etc/no-commented-out-code': offIfDevElseError,
+    // 'etc/no-commented-out-code': offIfDevElseError,
     // 'jsx-control-statements/jsx-choose-not-empty': 1,
     // 'jsx-control-statements/jsx-for-require-each': 1,
     // 'jsx-control-statements/jsx-for-require-of': 1,
