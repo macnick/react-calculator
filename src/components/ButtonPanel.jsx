@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from './Button';
+import { Button } from './Button';
 
-const ButtonPanel = ({ clickHandler }) => {
+export const ButtonPanel = ({ clickHandler }) => {
   const grey = '#ccc';
   const orange = '#f80';
   const groups = [
@@ -13,10 +13,10 @@ const ButtonPanel = ({ clickHandler }) => {
     ['0', '.', '='],
   ];
 
-  const handleClick = btnName => clickHandler(btnName);
+  const handleClick = (btnName) => clickHandler(btnName);
 
   return (
-    <div className="buttonpanel">
+    <div className='buttonpanel'>
       {groups.map((group, j) => (
         <div className={`btn-group group${j + 1}`} key={group}>
           {group.map((el, i) => (
@@ -37,5 +37,3 @@ const ButtonPanel = ({ clickHandler }) => {
 ButtonPanel.propTypes = {
   clickHandler: PropTypes.func.isRequired,
 };
-
-export default ButtonPanel;
