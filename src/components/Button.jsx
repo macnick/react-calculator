@@ -2,7 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export const Button = ({ name, color, wide, clickHandler }) => {
-  const handleClick = (title) => clickHandler(title)
+  const handleClick = (title) => {
+    console.log({ title })
+    clickHandler(title)
+  }
 
   return (
     <button

@@ -14,8 +14,6 @@ export const ButtonPanel = ({ clickHandler }) => {
     ['0', '.', '='],
   ]
 
-  const handleClick = (btnName) => clickHandler(btnName)
-
   return (
     <div className="buttonpanel">
       {groups.map((group, j) => (
@@ -26,7 +24,7 @@ export const ButtonPanel = ({ clickHandler }) => {
               name={el}
               color={i < group.length - 1 ? grey : orange}
               wide={el === '0'}
-              clickHandler={() => handleClick(el)}
+              clickHandler={() => clickHandler(el)}
             />
           ))}
         </div>

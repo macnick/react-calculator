@@ -12,8 +12,8 @@ export const App = () => {
   })
 
   const handleClick = (btnName) => {
-    const { total, next, operation, memory } = state
-    const calc = calculate({ total, next, operation, memory }, btnName)
+    // const { total, next, operation, memory } = state
+    const calc = calculate(state, btnName)
     setState((prevState) => ({
       ...prevState,
       total: calc.total,

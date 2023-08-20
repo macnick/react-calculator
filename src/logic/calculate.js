@@ -3,6 +3,17 @@ import { operate } from './operate'
 export const calculate = (data, btnName) => {
   let { total, next, operation, memory } = data
 
+  console.log(
+    'total',
+    total,
+    'next',
+    next,
+    'operation',
+    operation,
+    'memory',
+    memory
+  )
+
   const doOp = (t, n, o) => {
     if (next === null) {
       operation = btnName
@@ -13,6 +24,9 @@ export const calculate = (data, btnName) => {
   }
 
   const operations = {
+    mc: () => {
+      memory = null
+    },
     'm+': () => {
       if (total !== null) {
         memory = memory === null ? total : operate(memory, total, '+')
@@ -68,5 +82,5 @@ export const calculate = (data, btnName) => {
     operations[btnName]()
   }
 
-  return { total, next, operation }
+  return { total, next, operation, memory }
 }
