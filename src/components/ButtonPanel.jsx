@@ -1,22 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Button } from './Button';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Button } from './Button'
 
 export const ButtonPanel = ({ clickHandler }) => {
-  const grey = '#ccc';
-  const orange = '#f80';
+  const grey = '#ccc'
+  const orange = '#f80'
   const groups = [
+    ['mc', 'm+', 'm-', 'mr'],
     ['AC', '+/-', '%', '÷'],
     ['7', '8', '9', 'x'],
     ['4', '5', '6', '-'],
     ['1', '2', '3', '+'],
     ['0', '.', '='],
-  ];
+  ]
 
-  const handleClick = (btnName) => clickHandler(btnName);
+  const handleClick = (btnName) => clickHandler(btnName)
 
   return (
-    <div className='buttonpanel'>
+    <div className="buttonpanel">
       {groups.map((group, j) => (
         <div className={`btn-group group${j + 1}`} key={group}>
           {group.map((el, i) => (
@@ -31,9 +32,9 @@ export const ButtonPanel = ({ clickHandler }) => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
 ButtonPanel.propTypes = {
   clickHandler: PropTypes.func.isRequired,
-};
+}

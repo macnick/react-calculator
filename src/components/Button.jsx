@@ -1,13 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 export const Button = ({ name, color, wide, clickHandler }) => {
-  const handleClick = (name) => clickHandler(name);
+  const handleClick = (title) => clickHandler(title)
 
   return (
     <button
-      className='button'
-      type='button'
+      className="button"
+      type="button"
       style={{
         backgroundColor: color,
         width: wide ? '50%' : '25%',
@@ -16,17 +16,17 @@ export const Button = ({ name, color, wide, clickHandler }) => {
     >
       {name}
     </button>
-  );
-};
+  )
+}
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   color: PropTypes.string,
   wide: PropTypes.bool,
   clickHandler: PropTypes.func.isRequired,
-};
+}
 
 Button.defaultProps = {
   color: '#f94',
   wide: false,
-};
+}

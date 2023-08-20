@@ -17,7 +17,7 @@ module.exports = {
   // extends: isDev ? ['airbnb'] : ['airbnb', 'plugin:prettier/recommended'],
   // extends:
   //     isDev && false ? ['airbnb'] : ['airbnb', 'plugin:prettier/recommended'],
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -32,7 +32,7 @@ module.exports = {
     'eslint-plugin-no-inline-styles',
     'eslint-plugin-testing-library',
     'eslint-plugin-jest-dom',
-    'etc',
+    // 'etc',
     'react-hooks',
     // 'no-comments'
     // 'jsx-control-statements',
