@@ -1,6 +1,6 @@
 # react-calculator
 
-Fully-functional, beautiful calculator built with React. Updated to use functional components and latest React 18
+Fully-functional, beautiful calculator built with React. Updated to use functional components and latest React 18. Added another row with memory buttons.
 
 <p align="center">
 <img src="public/screenshot.png">

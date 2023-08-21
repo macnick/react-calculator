@@ -1,5 +1,5 @@
-import React from 'react'
 import PropTypes from 'prop-types'
+import React from 'react'
 import { Button } from './Button'
 
 export const ButtonPanel = ({ clickHandler }) => {
@@ -24,14 +24,14 @@ export const ButtonPanel = ({ clickHandler }) => {
   return (
     <div className="buttonpanel">
       {groups.map((group, j) => (
-        <div className={`btn-group group${j + 1}`} key={group}>
+        <div key={group} className={`btn-group group${j + 1}`}>
           {group.map((el, i) => (
             <Button
               key={el}
-              name={el}
-              color={buttonColor(j, i)}
-              wide={el === '0'}
               clickHandler={() => clickHandler(el)}
+              color={buttonColor(j, i)}
+              name={el}
+              wide={el === '0'}
             />
           ))}
         </div>
