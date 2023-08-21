@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import { Button } from './Button'
 
 export const ButtonPanel = ({ clickHandler }) => {
-  const grey = '#ccc'
+  const darkGrey = '#555'
+  const grey = '#bbb'
   const orange = '#f80'
   const groups = [
     ['mc', 'm+', 'm-', 'mr'],
@@ -14,6 +15,12 @@ export const ButtonPanel = ({ clickHandler }) => {
     ['0', '.', '='],
   ]
 
+  const buttonColor = (row, col) => {
+    if (row === 0) return darkGrey
+    if (col === 3) return orange
+    return grey
+  }
+
   return (
     <div className="buttonpanel">
       {groups.map((group, j) => (
@@ -22,7 +29,7 @@ export const ButtonPanel = ({ clickHandler }) => {
             <Button
               key={el}
               name={el}
-              color={i < group.length - 1 ? grey : orange}
+              color={buttonColor(j, i)}
               wide={el === '0'}
               clickHandler={() => clickHandler(el)}
             />

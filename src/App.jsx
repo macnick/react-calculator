@@ -13,7 +13,6 @@ export const App = () => {
 
   const handleClick = (btnName) => {
     const calc = calculate(state, btnName)
-    console.log(calc)
     setState((prevState) => ({
       ...prevState,
       total: calc.total,

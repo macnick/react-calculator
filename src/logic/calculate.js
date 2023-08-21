@@ -23,6 +23,13 @@ export const calculate = (data, btnName) => {
         operation = operation !== null ? operation : '='
       }
     },
+    'm-': () => {
+      const toMemory = next || total
+      if (toMemory !== null) {
+        memory = memory === null ? toMemory : operate(memory, toMemory, '-')
+        operation = operation !== null ? operation : '='
+      }
+    },
     mr: () => {
       if (memory !== null) {
         total = memory
