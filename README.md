@@ -36,15 +36,15 @@ Math-magicians is a fictional company based in France. They have requested my he
 - HTML/CSS
 - ES6
 - ESlint
-- Heroku
+- Netlify
 
 [Up](#Table-of-Contents)
 
 ### Live version
 
-A live version is hosted on Heroku.
+A live version is hosted on Netlify.
 
-- [**Calulator**](https://react-calculator-88569.herokuapp.com) @ heroku
+- [**Calulator**](https://64e39982bb88a608aa12aa85--sunny-swan-46a9cf.netlify.app) @ Netlify
 
 ### How to Install and Run in Your Computer
 
