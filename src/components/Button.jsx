@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 export const Button = ({ name, color, wide, clickHandler }) => {
   const handleClick = (title) => {
-    console.log({ title })
+    console.log('button', { title })
     clickHandler(title)
   }
 
