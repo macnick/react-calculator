@@ -8,16 +8,17 @@ export const App = () => {
     total: null,
     next: null,
     operation: null,
+    memory: null,
   })
 
   const handleClick = (btnName) => {
-    const { total, next, operation } = state
-    const calc = calculate({ total, next, operation }, btnName)
+    const calc = calculate(state, btnName)
     setState((prevState) => ({
       ...prevState,
       total: calc.total,
       next: calc.next,
       operation: calc.operation,
+      memory: calc.memory,
     }))
   }
 
