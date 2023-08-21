@@ -1,5 +1,5 @@
-import React from 'react'
 import PropTypes from 'prop-types'
+import React from 'react'
 
 export const Button = ({ name, color, wide, clickHandler }) => {
   const handleClick = (title) => {
@@ -9,12 +9,12 @@ export const Button = ({ name, color, wide, clickHandler }) => {
   return (
     <button
       className="button"
-      type="button"
+      onClick={() => handleClick(name)}
       style={{
         backgroundColor: color,
         width: wide ? '50%' : '25%',
       }}
-      onClick={() => handleClick(name)}
+      type="button"
     >
       {name}
     </button>
@@ -22,10 +22,10 @@ export const Button = ({ name, color, wide, clickHandler }) => {
 }
 
 Button.propTypes = {
-  name: PropTypes.string.isRequired,
-  color: PropTypes.string,
-  wide: PropTypes.bool,
   clickHandler: PropTypes.func.isRequired,
+  color: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  wide: PropTypes.bool,
 }
 
 Button.defaultProps = {
